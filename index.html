@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ConsuCar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="titulo-container">
+        <h1>ConsuCar</h1>
+        <img src="img/gas-pump.png" alt="Bomba de combustível" class="icone-titulo">
+    </div>
+
+    <h2>Calcule o consumo médio de combustível do seu carro</h2>
+    <p>Digite os valores do último abastecimento e a distância percorrida para descobrir quantos km/L seu carro consome.
+    </p>
+
+    <form id="calcForm">
+        <label for="ultimoAbastecimento">Último abastecimento (L):</label>
+        <input type="number" id="ultimoAbastecimento" step="0.01" required>
+        <div id="erroAbastecimento" class="error"></div>
+
+        <label for="ultimaDistancia">Distância percorrida desde o último abastecimento (km):</label>
+        <input type="number" id="ultimaDistancia" step="0.1" required>
+        <div id="erroDistancia" class="error"></div>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <footer class="footer">
+        <p>
+            Projeto inicial de extensão para o Google Chrome. Autoria de Gabriel de Souza. Disciplina de Bootcamp II.<br>
+            Ícone da bomba de gasolina:
+            <a href="https://www.flaticon.com/free-icons/gas" title="Gas icons" target="_blank">
+                Pixel perfect - Flaticon
+            </a>
+        </p>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

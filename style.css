@@ -1,0 +1,150 @@
+/* === Reset básico e fonte === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+body {
+    display: flex;             
+    justify-content: center;   
+    flex-direction: column;
+    width: 320px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+
+
+/* === Títulos === */
+
+.titulo-container {
+    display: flex;              
+    align-items: center;         
+    gap: 10px;                  
+    justify-content: center;     
+    margin-bottom: 10px;
+}
+
+
+.titulo-container h1 {
+    font-size: 1.5em;
+    margin: 0;             
+    line-height: 1; 
+    color: #ff7b00;
+}
+
+.icone-titulo {
+    width: 25px;
+    height: 25px;
+    margin: 0 4px 0 0;    
+}
+
+
+h2 {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+    text-align: center;
+     color: #ff9b4d; 
+}
+
+/* === Parágrafos explicativos === */
+p {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #333333;
+   
+}
+
+/* === Formulário === */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* === Labels === */
+label {
+    margin-bottom: 3px;
+    font-size: 0.8em;
+    color: #333333;
+    font-weight: bold; 
+}
+
+/* === Inputs === */
+input[type="number"] {
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    background-color: #fff5e6; 
+    border: 1px solid #ff9b4d;
+    border-radius: 5px;
+    font-size: 0.8em;
+     color: #3d0050;
+}
+
+/* === Botão de enviar === */
+button[type="submit"] {
+    padding: 7px 10px;
+    margin-top: 10px;
+    background-color: #ffa500 ; 
+    color: #ffffff;
+    font-weight: bold;   
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff7b00;
+    transform: scale(1.01)
+
+}
+
+/* === Mensagens de erro === */
+.error {
+    color: #f01000;  
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.8em;
+}
+
+/* === Resultado do cálculo === */
+#resultado {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;                   
+    background-color: #fff2e6;      
+    border: 1px solid #ff7b00;       
+    border-radius: 5px;   
+    font-size: 0.8em;           
+    text-align: center;
+    color:  #333333;                  
+    width: 100%;
+    max-width: 320 px;                 
+    box-sizing:border-box; 
+
+}
+
+
+body .footer {
+    margin-top: 15px;
+    font-size: 0.6em;       
+    text-align: center;      
+    color: #333333 !important;
+    line-height: 1.2;     
+}
+
+body .footer a {
+    color: #ff7b00;         
+    text-decoration: none;   
+}
+
+body .footer a:hover {
+    text-decoration: underline; 
+}
+
+
